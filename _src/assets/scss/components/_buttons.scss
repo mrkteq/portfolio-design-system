@@ -1,0 +1,85 @@
+@use '../abstracts/tokens' as *;
+
+// Define common button styles
+%button-base {
+  padding: .8rem 1.6rem;
+  font-family: $font-family-display;
+  font-size: $font-size-2;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: capitalize;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all .3s ease-in-out;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+// Common hover styles
+%button-hover {
+  text-decoration: none;
+}
+
+// Common after pseudo-element styles
+%button-after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: all .3s cubic-bezier(.19,1,.22,1);
+}
+
+[class*="mrk-button"] {
+  @extend %button-base;
+}
+
+// Primary button styles
+.mrk-button-primary {
+  border: 2px solid;
+  border-image: $gradient-primary 1;
+  background-image: $gradient-primary;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  &:hover {
+    @extend %button-hover;
+    -webkit-text-fill-color: #fff;
+  }
+
+  &::after {
+    @extend %button-after;
+    background-image: $gradient-primary;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+// Secondary button styles
+.mrk-button-secondary {
+  border: 2px solid $orange;
+  color: $orange;
+  background-color: transparent;
+
+  &:hover {
+    @extend %button-hover;
+    color: #fff;
+    background-color: $orange;
+  }
+
+  &::after {
+    @extend %button-after;
+    background-color: $orange;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

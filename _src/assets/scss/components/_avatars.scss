@@ -1,0 +1,13 @@
+@use '../abstracts/tokens' as *;
+
+[class*="mrk-avatar"] {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+  width: 90px;
+}
+
+.mrk-avatar-sm {
+  width: 30px;
+}

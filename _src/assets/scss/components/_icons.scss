@@ -1,0 +1,27 @@
+@use '../abstracts/tokens' as *;
+
+:where([class*="mrk-icon"]) {
+  width: 1rem;
+  aspect-ratio: 1;
+}
+
+.mrk-icon-12 {
+  width: .75rem;
+}
+
+.mrk-icon-24 {
+  width: 1.5rem;
+}
+
+.mrk-icon-32 {
+  width: 2rem;
+}
+
+.mrk-icon-96 {
+  width: 6rem;
+}
+
+.mrk-icon-200 {
+  width: 100%;
+  height: auto;
+}

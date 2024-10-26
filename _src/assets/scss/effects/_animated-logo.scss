@@ -1,0 +1,38 @@
+.scroll-section {
+  scroll-timeline-name: svg-timeline;
+  scroll-timeline-axis: block;
+  scroll-timeline: auto;
+}
+
+.my-svg {
+  width: 600px;
+  // opacity: 0; /* Initially invisible */
+}
+
+.my-svg path {
+  stroke: white;
+  stroke-width: 0.1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-timeline: svg-timeline;
+  animation: draw 10s linear forwards, fill 3s ease forwards 6s;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  10% {
+    // opacity: 1; /* Fade in the SVG */
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  to {
+    fill: white;
+  }
+}

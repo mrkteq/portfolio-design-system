@@ -1,0 +1,30 @@
+@use '../abstracts/tokens' as *;
+
+.mrk-surface {
+  background-color: var(--color-background-body, #{$color-background-body});
+}
+
+.mrk-surface-brand {
+  background-color: var(--color-background-brand, #{$color-background-brand});
+}
+
+.mrk-text-subdued {
+  color: var(--color-text-subdued, #{$color-text-subdued});
+}
+
+.mrk-text-inverse {
+  color: var(--color-text-inverse, #{$color-text-inverse});
+}
+
+.mrk-text-interactive {
+  color: var(--color-text-interactive, #{$color-text-interactive});
+}
+
+.mrk-text-subdued-inverse {
+  color: var(--color-text-subdued-inverse, #{$color-text-subdued-inverse});
+}
+
+.mrk-text-inherit {
+  color: inherit;
+  text-decoration: inherit;
+}

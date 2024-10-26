@@ -1,0 +1,66 @@
+@use '../abstracts/tokens' as *;
+
+[class*="mrk-stack"] {
+  --stack-size: 8px;
+  margin-block-end: var(--stack-size);
+}
+
+.mrk-stack-xs {
+  --stack-size: #{$spacing-xs};
+}
+.mrk-stack-sm {
+  --stack-size: #{$spacing-sm};
+}
+.mrk-stack-md {
+  --stack-size: #{$spacing-md};
+}
+.mrk-stack-lg {
+  --stack-size: #{$spacing-lg};
+}
+.mrk-stack-xl {
+  --stack-size: #{$spacing-xl};
+}
+
+:where([class*="mrk-flow"]) {
+  --flow-size: 8px;
+  > :where(:not(:last-child)) {
+    margin-block-end: var(--flow-size);
+  }
+}
+
+.mrk-flow-xs {
+  --flow-size: #{$spacing-xs};
+}
+.mrk-flow-sm {
+  --flow-size: #{$spacing-sm};
+}
+.mrk-flow-md {
+  --flow-size: #{$spacing-md};
+}
+.mrk-flow-lg {
+  --flow-size: #{$spacing-lg};
+}
+.mrk-flow-xl {
+  --flow-size: #{$spacing-xl};
+}
+
+[class*="mrk-inset-square"] {
+  --inset-size: 1rem;
+  padding: var(--inset-size);
+}
+
+.mrk-inset-square-xs {
+  --inset-size: #{$spacing-xs};
+}
+.mrk-inset-square-sm {
+  --inset-size: #{$spacing-sm};
+}
+.mrk-inset-square-md {
+  --inset-size: #{$spacing-md};
+}
+.mrk-inset-square-lg {
+  --inset-size: #{$spacing-lg};
+}
+.mrk-inset-square-xl {
+  --inset-size: #{$spacing-xl};
+}
