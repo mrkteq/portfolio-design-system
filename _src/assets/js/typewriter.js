@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var words = ['a Frontend Web Developer.'];
+    var words = ['I\'m a Web Developer.'];
     var currentWordIndex = 0;
     var offset = 0;
     var forwards = true;

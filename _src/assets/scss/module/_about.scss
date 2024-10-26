@@ -1,0 +1,12 @@
+/* about.css */
+.about {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .about-container {
+      grid-template-columns: 2fr 1fr;
+  }
+}
