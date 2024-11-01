@@ -2,19 +2,20 @@
 @import 'base/reset';
 @import 'base/global';
 
-@import 'module/base';
-@import 'module/layout';
-@import 'module/hero';
-@import 'module/avatar';
-@import 'module/about';
-@import 'module/gallery';
-@import 'module/contact';
-@import 'module/social-links';
-@import 'module/footer';
-@import 'module/top';
+// @import 'module/base';
+// @import 'module/layout';
+// @import 'module/hero';
+// @import 'module/avatar';
+// @import 'module/about';
+// @import 'module/gallery';
+// @import 'module/contact';
+// @import 'module/social-links';
+// @import 'module/footer';
+// @import 'module/top';
 
+@import 'components/all';
 // @import 'components/avatars';
-@import 'components/buttons';
+// @import 'components/buttons';
 @import 'components/type';
 // @import 'components/icons';
 // @import 'components/nav-bar';
@@ -25,8 +26,8 @@
 
 @import 'utilities/grid';
 @import 'utilities/color';
-// @import 'utilities/spacing';
-// @import 'utilities/visual';
+@import 'utilities/spacing';
+@import 'utilities/visual';
 @import 'utilities/flex';
 
-@import 'layouts/single-page';
+// @import 'layouts/single-page';
