@@ -9,7 +9,7 @@
 
 :where(body) {
   color: var(--color-text-body, #{$color-text-body});
-  font-family: 'jwf', sans-serif;
+  font-family: $font-family-body;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }

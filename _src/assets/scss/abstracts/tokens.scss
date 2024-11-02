@@ -28,7 +28,8 @@ $font-weight-bold: 600;
 
 $font-size-1: 3.5rem;
 $font-size-2: 1.5625rem;
-$font-size-3: 1rem;
+// $font-size-3: 1rem;
+$font-size-3: clamp(1rem, 3vw, 1.4rem);
 $font-size-4: .875rem;
 $font-size-5: .75rem;
 
@@ -39,7 +40,7 @@ $line-height-4: 20px;
 $line-height-5: 16px;
 
 $font-family-display: 'mwf', sans-serif;
-$font-family-body: 'jwf', sans-serif;
+$font-family-body: system-ui,-apple-system,sans-serif;
 
 $color-text-body: $black;
 $color-text-interactive: $white;

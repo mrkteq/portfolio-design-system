@@ -16,11 +16,11 @@ Use the primary button as the main call-to-action on a page.
 A primary button.
 
 <div class="doc-example">
-  <button type="button" class="mrk-button-primary">Button</button>
+  <button type="button" class="mrk-button-primary button">Button</button>
 </div>
 
 {% call code.sample() %}
-<button type="button" class="mrk-button-primary">Button</button>
+<button type="button" class="mrk-button-primary button">Button</button>
 {% endcall %}
 
 ## Secondary Button

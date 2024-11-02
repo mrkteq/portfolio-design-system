@@ -1,8 +1,10 @@
-  /* Modern CSS Reset */
+@use '../abstracts/tokens' as *;
+
+/* Modern CSS Reset */
   *, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    // box-sizing: border-box;
+    // margin: 0;
+    // padding: 0;
 }
 
 /* Custom Properties */
@@ -12,17 +14,16 @@
     --text-color: #fff;
     --gradient-bg: linear-gradient(45deg, #4b6cb7 0%, #ffffff 100%);
     --spacing-section: clamp(3rem, 10vw, 8rem);
-    --font-heading: 'mwf', sans-serif;
 }
 
 html {
-    font-size: 16px;
+    // font-size: 16px;
 }
 
 /* Base Styles */
 body {
     font-family: system-ui, -apple-system, sans-serif;
-    font-size: clamp(1rem, 3vw, 1.4rem);
+    // font-size: clamp(1rem, 3vw, 1.4rem);
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--color-primary);
@@ -30,7 +31,7 @@ body {
 
 /* Typography */
 h1, h2 {
-    font-family: var(--font-heading);
+    font-family: $font-family-display;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
